@@ -1,0 +1,40 @@
+.te_theme_button{
+	color:nth($f_color,19);
+	background: #ffffff;
+	//border: 1px solid transparent;
+	display: inline-block;
+	@include position(relative);
+	font-size:nth($f_sizes,3);
+	@include transition(all,0.3s,ease);
+	font-weight: bold;
+	box-shadow: 0px 3px 10px 0 rgba(50, 50, 93, 0.2);
+}
+.te_theme_button:before,{
+	content: "";
+	@include position(absolute,unset,0,-3px,0);
+	margin: auto;
+	background: nth($f_color,19);
+	height: 3px;
+	width: 70%;
+	transition: all .35s ease;
+}
+
+.te_theme_button:hover:before {
+	width: 100%;
+	@include transition(all,0.35s,ease);
+}
+
+.te_theme_button:hover{
+	//opacity:0.7;
+	background-color: rgba(nth($f_color,19),0.7);
+}
+
+@media (max-width:500px)
+{
+	.te_theme_button
+	{
+		padding: 0.475rem 0.7rem;
+		font-size:nth($f_sizes,3);
+	}
+}
+

@@ -1,0 +1,218 @@
+Version 12.0.0.35 - 30 January 20
+===================================
+
+1. Added - Footer related filed in web-site.
+
+Version 12.0.0.34 - 23 January 20
+===================================
+
+1. Added - Number of rows to show in product name selection.
+
+Version 12.0.0.33 - 06 January 20
+===================================
+
+1. Fixed - Fix issues of background color in box layout.
+
+Version 12.0.0.32 - 01 January 20
+===================================
+
+1. Fixed - Odoo removed some classes from snippet in order to fix the editor related issue.
+
+Version 12.0.0.31 - 16 December 19
+===================================
+
+1. Fixed - Odoo removed some classes from snippet.
+
+Version 12.0.0.30 - 14 December 19
+===================================
+
+1. Fixed - Few snippet background color is not going to change so fix that thing.
+
+Version 12.0.0.29 - 20 September 19
+===================================
+
+1. Fixed - Category full name issue
+2. Fixed - address in my account details
+3. Added - configuration for Social icons in product page
+
+
+Version 12.0.0.28 -  16 August 19
+===================================
+
+1. Fixed - search empty submit issue
+2. Fixed - Snippet text alignment issue while customising
+
+Version 12.0.0.27 -  12 july 19
+===================================
+
+1. Added - show more and less in compare name
+
+
+Version 12.0.0.26 -  8 july 19
+===================================
+
+1. Fixed - Translation issue of view all text in product slider
+
+Version 12.0.0.25 -  4 july 19
+===================================
+
+1. Fixed - Secondary color issue in mega menu
+2. Fixed - Small design issues in shop
+
+Version 12.0.0.24 -  27 june 19
+===================================
+
+1. Fixed - Translation issue of show more text in shop attributes
+2. Fixed - Navbar color changing issue
+3. Added - backend option for activating price filter
+4. Fixed - websitewise brand issue
+
+Version 12.0.0.23 - 22 june 19
+===================================
+
+1.Fixed - Contact us editable issue
+
+
+Version 12.0.0.22 - 14 june 19
+===================================
+
+1. Fixed - Multiple address selector issue at checkout
+2. Fixed - list view activated before installing theme
+3. Fixed - my account dropdown translatable issue
+
+
+Version 12.0.0.21 - 10 june 19
+===================================
+
+1. Fixed - Editable issue of button
+2. Added - Vertical menu in header
+
+
+Version 12.0.0.20 - 29 may 19
+===================================
+
+1. Fixed - View all Issue in product slider
+2. Fixed - Website wise brand description issue in product page
+
+Version 12.0.0.19 - 21 may 19
+===================================
+
+1. Fixed - Latest Blog snippet design due to odoo update
+
+Version 12.0.0.18 - 16 may 19
+===================================
+
+1. Removed - indicators from quick view and product templates
+
+Version 12.0.0.17 - 14 may 19
+===================================
+
+1. Added - Quick view
+
+Version 12.0.0.16 - 7 may 19
+===================================
+
+1. Fixed - Thumbnail image slider issue in product carousel
+
+
+Version 12.0.0.15 - 6 May 19
+===================================
+
+1. Removed - Quick view Functionality
+
+Version 12.0.0.14 - 25 April 19
+===================================
+
+1. Fixed - scroll issue in brand
+2. Added - Extra footer icons
+
+Version 12.0.0.13 - 24 April 19
+===================================
+
+1. Added - Price filter in shop
+2. Fixed - issue of overriden odoo's view after doing changes from front end in product page
+
+Version 12.0.0.12 - 23 April 19
+===================================
+
+1. Added - Brand filter in shop
+
+
+Version 12.0.0.11 - 12 April 19
+===================================
+
+1. Added - border in color variant of product
+
+Version 12.0.0.10 - 8 April 19
+==================================
+
+1. Fixed - Mega menu design in extra menu items
+
+Version 12.0.0.9 - 4 April 19
+===================================
+
+1. Fixed - Custom Variant issue in product page
+
+Version 12.0.0.8 - 29 March 19
+===================================
+
+1. Added - Overlapping section in slider style 5 like homepage
+
+Version 12.0.0.7 - 28 March 19
+===================================
+
+1. Fixed - Capitalize text issue in snippet description
+
+Version 12.0.0.6 - 18 March 19
+===================================
+1. Fixed - Not editable offer styles in header due to transparent header
+2. Fixed - Two times description issue in product page 
+3. Fixed - Shop cart popover design
+
+Version 12.0.0.5 - 21 February 19
+===================================
+
+1. Fixed - Transparent Header issue
+
+Version 12.0.0.4 - 21 February 19
+===================================
+
+1. Fixed - issue of Product slider and recently viewed slider(Slider was not coming in the responsive when less than 4 products)
+
+
+Version 12.0.0.3 - 11 February 19
+===================================
+
+1. Fixed - Slider issue in team and customer snippets
+
+
+Version 12.0.0.2 - 2 February 19
+===================================
+
+1. Fixed - issue while no description is added in slider style 4
+
+
+Version 12.0.0.1 - 	31 January 19
+===================================
+
+1. Initial release
+
+	- 7 header styles
+	- 3 footer styles
+	- 11 button styles
+	- Dynamic Slider
+	- nth level Dynamic Mega Menu
+	- 6 mega menu styles
+	- Dynamic Blog Listing
+	- Quick View
+	- Breadcrumb in shop page
+	- Category wise landing page
+	- 15 predefined fonts
+	- 50+ snippets
+	- Sale label
+	- Employee and customer sliders
+	- Social sharing in product page
+	- Configurable Menu styles
+	- Customizable offer banner in shop, wishlist and cart page
+	- Dynamic Progress bar (Expertise)
+	- Global Header Search

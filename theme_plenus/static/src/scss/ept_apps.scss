@@ -1,0 +1,101 @@
+/*-------------- Promotion ---------------*/
+#order_total_discount
+{
+	.text-center
+	{
+		text-align:right !important;
+		border:0;
+	}
+	
+}
+@media (min-width:1200px)
+{
+	.t_cart_summary_card .toggle_summary_div
+	{
+	max-width: 500px;
+	}
+}
+
+@media (max-width:767.98px)
+{
+
+	.oe_website_sale .t_confirm_products .td-discount
+	{
+		    display: inline-block;
+		    width: auto;
+		    padding-top: 0;
+		    
+		    &:before
+				{
+					content:'Discount:';
+					font-size:nth($f_sizes,18);
+					display: inline-block;
+				}
+	}
+}
+
+/*-------------- Website Search ----------------*/
+
+#product_records
+{
+	.search_result_label ul.search_categories 
+	{
+		li.active a
+		{
+			color: nth($f_color,19) !important; 
+			border-bottom: 3px solid nth($f_color,19) !important; 
+		}
+		li a:hover
+		{
+			color: nth($f_color,19) ; 
+			border-bottom: 3px solid nth($f_color,19) !important; 
+		}
+	}
+	.search_suggestion
+	{
+		span a
+		{
+			color: nth($f_color,19);
+		}
+	}
+	.search_result_main .prod_rec .Prod_name
+	{
+		font-size:nth($f_sizes,7) !important; 
+	}
+}
+.search_result_pager
+{
+	.page-item.disabled .page-link
+	{
+		background-color: transparent;
+		border-color: transparent;
+	}
+	.page-link
+	{
+		border: none;
+		background-color: transparent;
+		padding: 0rem 0.75rem;	
+		@include style(18,9,inherit);
+	}
+	.page-item.active .page-link
+	{
+		background-color: transparent;
+		border-color: transparent;
+		color:nth($f_color,19);
+	}
+	li.page-item
+	{
+		border-right: 1px solid #ccc;
+		a
+		{
+			padding: 0rem 0.6rem;
+		}
+	}
+	li.active a
+	{
+		padding: 0rem 0.6rem !important;
+	}
+	li.page-item:last-child{
+		border:none;
+	}
+}

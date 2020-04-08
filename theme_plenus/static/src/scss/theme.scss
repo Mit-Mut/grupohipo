@@ -1,0 +1,221 @@
+
+/******************************
+INDEX:
+    01 - 3 Columns image snippets - style 6
+    02 - 3 Columns snippets - Icon Style 2 
+    03 - 3 Columns snippet - Style-8
+    04 - Offers snippet - Style-6
+    
+******************************/
+
+/*-----------3 COLUMNS IMAGES STYLE 6------------*/
+
+.t_border
+	{
+		
+	.b_right
+	{
+		border:1px solid #e4e9ef;
+		border-right:0;
+	}
+	.b_right:nth-child(3)
+	{
+	/*---------This media query is used to add border-right for medium screen in 3 Columns snippets - style 6-------*/
+			@include media-breakpoint-up(lg)
+			{
+    			border-right:1px solid #e4e9ef;
+    		}
+    		@include media-breakpoint-up(md)
+			{
+    			border-right:0;
+    		}
+  	}
+	.b_right:last-child()
+	{
+		border-right:0;
+	}
+	.t_img_height
+	{
+		max-height:156px;
+	}
+	.t_im_hover 
+	{
+	 &:hover
+		{
+			opacity: 0.4;
+			@include transition(all, 0.5s, ease-out);
+		}
+	}
+}
+
+/*-------------------3 Columns - Icon Style 2-----------------*/
+
+.t_border{
+border-right:1px solid #d4dce1;
+}
+.t_background{
+background:nth($f_color,18);
+}
+.t_heading4{
+color: nth($f_color,3);
+text-transform: capitalize;
+}
+.t_icon2_content{
+@include style(7,2);
+}
+
+.t_icon_effect{
+@include style(10,14);
+display: inline-block;
+}
+.t_icon_box{
+    &:hover .t_icon_effect span
+    {
+         @include animation-icon(0s, 0.3s, bounceIn, ease-out, 1);
+    }
+}
+/*-------------3 Columns - Style-8---------------*/
+.t_three_img{
+	overflow: hidden;
+	width:100%;
+		@include media-breakpoint-down(md)
+		{
+    		margin-bottom: -6px;
+    	}
+}
+.t_img_container{
+		background-size: cover;
+		background-position: center;
+		
+}
+.t_img_content{
+	padding:18% 11%;
+	
+	.t_first_heading{
+		@include style(18,5,inherit,unset,uppercase);
+		font-weight: 600;
+		letter-spacing: 2px;
+		margin-bottom: 0.3rem;
+		display: inline-block;
+	}
+	.t_second_heading{
+		color:nth($f_color,5);
+		text-transform: capitalize;
+	}
+	.t_third_content{
+		@include style(7,5);
+		margin-bottom: 0.9rem;
+		display: inline-block;
+	}
+}
+
+/*-------------Offers - Style-6-------------*/
+.o_editable{
+	.t_banner_background_image{
+		&:before ,&:after{	
+		@include position(relative);
+		}
+	}
+}
+.t_banner_background_image{
+	overflow: hidden;
+	@include position(relative);
+	z-index: 0;
+	
+	.t_banner_image{
+		background-size: cover;
+		padding-top: 15%;
+		padding-right: 10%;
+		padding-left: 10%;
+		padding-bottom:15%;
+		max-height:392px;
+		background-position: center;
+		background-repeat: no-repeat;
+	
+	}
+	&:before ,&:after{	
+			content: "";
+			@include position(absolute,0);
+			@include skew(20,0);
+		    width: 70%;
+		    height: 100%;
+		    background-color:rgba(nth($f_color,5),0.3);
+		    @include transition(all,0.5s,ease,0s);
+		    
+	}
+	&:before{
+		left: -100%;
+	}
+	&:after{
+		right: -100%;
+	}
+	&:hover{ 
+		&:before {
+			left: -20%;
+		}
+		&:after{
+			right: -20%;
+		}
+		.t_banner_heading span{
+			&:before{
+				transform: translate3d(100%, 0, 0) translate3d(1px, 0, 0);
+			}
+		}
+	}
+	@include media-breakpoint-down(md) {
+		.t_banner_image{
+	        padding: 30% 5%;
+    	}
+    }
+    @include media-breakpoint-down(lg) {
+		.t_banner_image{
+	        padding: 10% 10%;
+    	}
+    }
+}
+//heading animation
+.t_banner_content{
+	.t_banner_heading{
+		display:inline-block;
+		color: nth($f_color,5);
+		text-transform: capitalize;
+		@include position(relative);
+		overflow: hidden;
+		
+		span{
+			&:before {
+				display:inline-block;
+				@include position(absolute,0,unset,unset,0);
+				width: 100%;
+				height: 100%;
+				background:rgba(nth($f_color,19),0.5); 
+				content: "";
+			    transform: translate3d(-100%, 0, 0) translate3d(-1px, 0, 0);
+			    @include transition(transform ,0.7s ,cubic-bezier(0.7, 0, 0.3, 1) ,0s);
+			}
+		}	
+	}
+	.t_banner_sub_heading{
+	@include style(18,5,inherit,unset,uppercase);
+	}
+	.t_banner_text{
+	@include style(7,5);
+	}Home page Responsive
+	.s_btn
+	{
+		z-index: 5;
+		position: relative;
+	}
+}
+.t_banner_image_design
+{
+	@include position(relative);
+	z-index: 99;
+	margin-top: -95px;
+	@include media-breakpoint-down(lg)
+	{
+		margin-top:0;
+	}
+}
+
+

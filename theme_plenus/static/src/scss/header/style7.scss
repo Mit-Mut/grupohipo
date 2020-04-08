@@ -1,0 +1,420 @@
+.t_ftr_before_bg
+{
+	background-color:#000000;
+	color:nth($f_color,5); 
+	
+	@include media-breakpoint-down(xs)
+	{
+		display: inline-block;
+		vertical-align: middle;
+		background-color: inherit;
+	}
+}
+.t_login_right
+{
+	.btn-link,a.dropdown-toggle,.t_signin a
+	{
+		color:nth($f_color,5);
+	}
+	> div.text-right > div
+	{
+		display: inline-block;
+		vertical-align: middle;
+		@include media-breakpoint-down(xs)
+		{
+			padding: 0 4px !important;
+		}
+	}
+	.user_account_icon, .t_currency_symbol
+	{
+		display: inline-block;
+		& i
+		{
+			display: block !important;
+		}
+	}
+	.user_account_name, .t_currency_name
+	{
+		display:none;
+	}
+	.te_bar_icon
+	{
+		a
+		{
+			color:nth($f_color,5);
+		}
+	}
+	.te_pricelist
+	{
+		.dropdown-menu
+		{
+			left: auto !important;
+			right: 0;
+			@include media-breakpoint-down(lg)
+			{
+				transform: translate3d(0px, 47px, 0px) !important;
+			}
+		}
+	}
+}
+.t_user_account
+{
+	> a.dropdown-toggle
+	{
+		text-transform:capitalize;
+	}
+}
+.t_offer_left
+{	
+	padding: 13px 0;
+	
+	@include media-breakpoint-down(md)
+	{
+		display:none;
+	}
+
+	.te_s_header_offer_text
+	{
+		float:left;
+		
+		ul > li
+		{
+			color:nth($f_color,5);
+			
+			span
+			{
+				color:nth($f_color,24);
+			}
+		}
+	}
+	.t_header_w_share >a
+	{
+		color:nth($f_color,5);
+		
+		&:hover
+		{
+			opacity:0.8;
+			color:nth($f_color,5);
+		}
+	}
+}
+
+.t_header_navbar
+{
+	background-color:nth($f_color,19);
+	padding:0px;
+	
+	@include media-breakpoint-down(sm)
+	{
+		 background-color: #F9F9F9 !important;
+		 padding:5px;
+	}
+	
+	& .navbar-brand
+	{
+		display:none;
+	
+		@include media-breakpoint-down(sm)
+		{
+			display: inline-block;
+			
+		}
+	}
+	#top_menu_collapse,#top_menu_collapse_clone
+	{
+		& #top_menu 
+		{
+			margin:0px auto;
+			
+			> li.nav-item
+				{
+					position:relative;
+					
+					> ul.dropdown-menu
+					{
+						border-top: 1px solid #ced4da;
+					}
+				}
+		
+			>li > a.nav-link 
+			{
+				@include style(2,5,inherit,null,capitalize);
+				padding: 1rem 0.8rem;
+				font-weight: 600;
+				
+				@include media-breakpoint-down(sm)
+				{
+					 color:nth($f_color,3);
+				}
+				
+				&:before
+				{
+					background: #ffffff;
+					bottom: 0;
+					content: '';
+					display: block;
+					height: 2px;
+					left: 50%;
+					position: absolute;
+					right: 50%;
+					top: auto;
+					width: 0;
+					z-index: 9;
+					transition: .3s ease;
+					
+					@include media-breakpoint-down(md)
+					{
+						 display:none;
+					}
+				}
+				
+			}
+			>li > a.nav-link.active
+			{
+				left: 0;
+				right: 0;
+				width: 100%;
+				
+				&:before
+				{
+					left: 0;
+					right: 0;
+					width: 100%;
+				
+					@include media-breakpoint-down(sm)
+					{
+						color:nth($f_color,19) !important;
+					}
+				}
+				
+			} 
+			
+			>li >a.nav-link
+			{
+				&:hover
+				{
+					&:before
+					{
+						left: 0;
+						right: 0;
+						width: 100%;
+					}
+				}
+			}
+			>li.dropdown 
+			{
+				a.dropdown-toggle
+				{
+					position:relative;
+				}
+			}
+		}
+	}
+}
+.t_header_language > .btn
+{
+	text-transform: capitalize;
+}
+.t_header_before_logo
+{
+	img
+	{
+		max-height:70px;
+	}
+}
+
+.t_srch_icon_header
+{
+	display:none;
+	
+	
+}
+.header_style_7_main
+{
+	@include media-breakpoint-down(xs)
+		{
+			text-align:right;
+		}
+	
+	& .t_login_right
+	{
+		padding: 0;
+		& a.btn-link
+		{
+			padding: 13px 5px;
+			text-transform: capitalize;
+			
+			@include media-breakpoint-down(xs)
+			{
+				padding: 13px 0px;
+			}
+		}
+	}
+	@include media-breakpoint-down(xs)
+	{
+		background-color: #000000;
+	}
+	
+}
+
+.t_search_popover
+{
+	& input.form-control
+	{
+		 border:1px solid #dedede;
+		 border-radius: 30px !important;
+	}
+	& button.oe_search_button
+	{
+		@include position(absolute,auto,0px,auto,auto);
+		z-index: 9;
+		@include border(1px,19,solid);
+		text-transform: capitalize;
+		font-weight: 600;
+		border-top-right-radius: 30px;
+		border-bottom-right-radius: 30px;
+	}
+}
+.t_header_icon 
+{
+  text-align:right;
+	a#my_cart ,a#my_wish
+	{
+		display:inline-block !important;
+		position: relative;
+		
+		@include media-breakpoint-down(xs)
+		{
+			padding:10px 4px;
+		}
+		
+		i.fa
+		{
+			font-size:25px;
+			color:nth($f_color,3);
+			
+			@include media-breakpoint-down(md)
+			{
+				font-size:25px;
+				display:inline-block;
+			}
+			
+			@include media-breakpoint-down(xs)
+			{
+				display: inline-block;
+				width: auto;
+				color:nth($f_color,5);
+				font-size:15px;
+			}
+		}
+		span
+		{
+			font-size:15px;
+			
+			@include media-breakpoint-down(md)
+			{
+				display:none;
+			}
+		}
+		sup
+		{
+		    border-radius: 12px;
+			width: auto;
+			padding: 4px 6px;
+			vertical-align: top;
+			@include position(absolute,-5px,50px);
+			
+			@include media-breakpoint-down(md)
+			{
+				@include position(static,0,0);
+				display:inline-block;
+			}
+			@include media-breakpoint-down(xs)
+			{
+				padding: 3px 5px;
+			}
+		}
+	}
+	@include media-breakpoint-down(xs)
+	{
+		width: auto;
+		padding:0 !important;
+	}
+}
+.header_7_search
+{
+	@include media-breakpoint-down(xs)
+	{
+		width: auto;
+		position:initial;
+		padding: 0 4px;
+	}
+}
+
+/*********** Media Query ************/
+@include media-breakpoint-down(sm)
+{
+	#top_menu_collapse
+	{
+		background-color:#fff;
+	}
+}
+@include media-breakpoint-down(xs)
+{
+	.header_style_7_inner
+	{
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.t_header_inner
+	{
+		padding:0 !important;
+	}
+	 .t_header_search
+		{	
+			display: inline-block;
+			vertical-align: middle;
+			
+			& .t_srch_icon_header
+			{
+				display:block;
+				a
+				{
+					color:nth($f_color,5);
+					font-size:15px;
+					outline:none;
+				}
+			}
+		 	.t_search_popover 
+			 {
+		   		opacity: 0;
+				visibility: hidden;
+				transform: translate(0,10px);
+				outline:0;
+				@include position(absolute,66px,0px,auto,0);
+				width: 100%;
+				padding: 5px 10px;
+	
+				 &.visible
+				  {
+					transform:translate(0,-20px);
+					transition:all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+					opacity:1;
+					z-index: 999;
+				  }
+			}
+			.t_search_popover:before
+			 {
+			    z-index: -1;
+			    content: '';
+			    @include position(absolute,-8px,calc(50% - 10px),auto,auto);
+			    transition-duration: 0.3s;
+			    transition-property: transform;
+			}
+			.t_srch_close
+			{
+				display: none;
+			}
+		}
+}
+	
